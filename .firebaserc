@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "felipemontana0410"
+  },
+  "targets": {
+    "whitesoft-website": {
+      "hosting": {
+        "felipemontana0410": [
+          "felipemontana0410"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
