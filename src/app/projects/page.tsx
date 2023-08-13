@@ -48,6 +48,7 @@ const Projet = () => {
         onSlideChange={(e) => console.log("slide change:::>", e)}
         effect="fade"
         autoplay={{ delay: 3000 }}
+        loop={true}
       >
         {(isMobile ? arraySlidesResponsive : arraySlidesDesktop).map((e, i) => (
           <SwiperSlide key={i}>

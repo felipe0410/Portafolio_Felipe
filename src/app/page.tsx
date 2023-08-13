@@ -35,6 +35,7 @@ export default function Home() {
           alignItems: "flex-start",
           justifyContent: { xs: "center", sm: "flex-end" },
         }}
+        id={"container text"}
       >
         <Box
           width={{ md: "55%", lg: "70%" }}
@@ -44,6 +45,9 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+            maxHeight: { xs: "295px", sm: "fit-content" },
+            marginTop: { xs: "20px", sm: "0" },
+            textAlign: { xs: "center", sm: "left" },
           }}
         >
           <Box id="container">
@@ -124,9 +128,7 @@ export default function Home() {
         <Box
           sx={{
             width: "100%",
-            height: "50%",
-            position: "absolute",
-            marginTop: "222px",
+            marginTop: "-222px",
           }}
           component={"img"}
           src={"/imgs/home1.svg"}

@@ -37,6 +37,7 @@ export default function Home() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "flex-end",
+        marginTop: "-20%",
       }}
     >
       <Box
@@ -54,7 +55,7 @@ export default function Home() {
         }}
       >
         <Box
-          width={{sm:"90%"}}
+          width={{ sm: "90%" }}
           sx={{
             height: "70%",
             display: "flex",
@@ -67,7 +68,7 @@ export default function Home() {
             marginBottom={"20px"}
             sx={{
               alignSelf: { xs: "center", lg: "auto" },
-              width: { xs: "70%", lg: "auto" },
+              width: { xs: "90%", sm: "70%", lg: "auto" },
             }}
           >
             <FormContact />
@@ -88,15 +89,16 @@ export default function Home() {
                   sx={{
                     marginRight: "20px",
                     display: "flex",
-                    marginY: "20px",
+                    marginY: { xs: "8px", sm: "20px" },
                     alignItems: "center",
                   }}
                 >
-                  <Image
+                  <Box
+                    component={"img"}
                     src={e.icon}
                     alt={`icon-${i}`}
-                    width={40}
-                    height={40}
+                    width={{ xs: 25, sm: 40 }}
+                    height={{ xs: 25, sm: 40 }}
                   />
                   <a
                     target="_blank"

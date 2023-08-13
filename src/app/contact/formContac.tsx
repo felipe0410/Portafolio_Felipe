@@ -64,7 +64,7 @@ function FormContact() {
               fontStyle: "normal",
               fontWeight: 600,
               lineHeight: "normal",
-              marginBottom: "20px",
+              marginBottom: { xs: "5px", sm: "20px" },
               marginLeft: "10px",
             }}
           >
@@ -78,7 +78,7 @@ function FormContact() {
             sx={{
               borderRadius: "50px",
               background: "#D9D9D9",
-              padding: "7px 20px",
+              padding: { xs: "0px 20px", sm: "7px 20px" },
               width: "100%",
             }}
             onChange={handleChange}
@@ -96,11 +96,11 @@ function FormContact() {
             fontStyle: "normal",
             fontWeight: 700,
             lineHeight: "normal",
-            padding: "10px 80px",
+            padding: { xs: "5px 50px", sm: "10px 80px" },
             marginTop: "10px",
           }}
         >
-          {'SEND'}
+          {"SEND"}
         </Button>
       </Box>
     </Box>

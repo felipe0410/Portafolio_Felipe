@@ -51,7 +51,7 @@ const Header = () => {
 
   const drawerResponsive: any = () => {
     return (
-      <Box width={"90%"} marginTop={"10px"}>
+      <Box width={"90%"} marginTop={"10px"} marginLeft={"10px"}>
         <IconButton onClick={handleDrawerToggle}>
           <Box component={"img"} src="/icons/drawer/menu.svg" />
         </IconButton>
@@ -90,7 +90,6 @@ const Header = () => {
         width: "100%",
         display: "flex",
         justifyContent: { xs: "space-between", sm: "center" },
-        padding: "10px",
       }}
     >
       <Box>{isMobile ? drawerResponsive() : headerDesktop()}</Box>
